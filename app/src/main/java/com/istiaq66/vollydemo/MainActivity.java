@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
 
    private static String TAG = MainActivity.class.getSimpleName();
-   private Button insertData;
+   private Button insertData,Viewlist;
 
-   private EditText editIname, editMobile;
+   private EditText editIname, editMobile, editemail;
 
    // Progress dialogs
    private ProgressDialog pDialog;
@@ -53,12 +54,15 @@ public class MainActivity extends AppCompatActivity {
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_main);
-      insertData = (Button) findViewById(R.id.insert);
 
+      insertData = (Button) findViewById(R.id.insert);
+      Viewlist = (Button) findViewById(R.id.View);
 
 
       editIname = (EditText) findViewById(R.id.name);
       editMobile = (EditText) findViewById(R.id.mobile);
+      editemail = (EditText) findViewById(R.id.email);
+
 
 
       pDialog = new ProgressDialog(this);
@@ -75,6 +79,18 @@ public class MainActivity extends AppCompatActivity {
 
             //  insertdatanewway2();
             confirmadddata();
+         }
+      });
+
+
+      Viewlist.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+
+
+            startActivity(new Intent(getApplicationContext(),GetCustomer.class));
+
+
          }
       });
 
@@ -135,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
             //progressBar.setVisibility(View.GONE);
             editIname.setText("");
             editMobile.setText("");
+            editemail.setText("");
 
             Toast.makeText(getApplicationContext(), "Data Inserted Successfully", Toast.LENGTH_SHORT).show();
 
@@ -154,6 +171,7 @@ public class MainActivity extends AppCompatActivity {
 
             parameters.put("c_name", editIname.getText().toString());
             parameters.put("c_mobile", editMobile.getText().toString());
+            parameters.put("c_email", editemail.getText().toString());
 
             hidepDialog();
 

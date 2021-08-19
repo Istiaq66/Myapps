@@ -43,6 +43,27 @@
         app:layout_constraintWidth_percent="0.8"></EditText>
 
 
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg"
+        android:hint="email"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+
+        android:paddingBottom="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.8"></EditText>
+
+
     <Button
         android:id="@+id/insert"
         android:layout_width="0dp"
@@ -57,9 +78,26 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.49"
+        app:layout_constraintVertical_bias="0.6"
         app:layout_constraintWidth_percent="0.8"></Button>
 
+
+    <Button
+        android:id="@+id/View"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:text="View"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintWidth_percent="0.8"></Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
