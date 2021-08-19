@@ -17,6 +17,7 @@
             android:layout_height="50dp"
             android:paddingLeft="20dp"
             android:text="ID"
+            android:gravity="center_vertical"
             android:textColor="@color/black"
             android:textSize="25dp"></TextView>
 
@@ -26,6 +27,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
             android:paddingLeft="20dp"
+            android:gravity="center_vertical"
             android:text="Name"
             android:textColor="@color/purple_200"
             android:textSize="25dp"></TextView>
@@ -34,6 +36,7 @@
             android:id="@+id/mobileg"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:gravity="center_vertical"
             android:layout_marginTop="100dp"
             android:paddingLeft="20dp"
             android:text="mobile no"
@@ -44,6 +47,7 @@
             android:id="@+id/emailg"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:gravity="center_vertical"
             android:layout_marginTop="150dp"
             android:paddingLeft="20dp"
             android:text="email"
