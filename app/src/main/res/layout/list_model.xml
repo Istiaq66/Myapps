@@ -7,47 +7,48 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
+        android:padding="10dp"
         >
 
         <TextView
             android:id="@+id/idg"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:gravity="center"
+            android:paddingLeft="20dp"
             android:text="ID"
             android:textColor="@color/black"
-            android:textSize="20dp"></TextView>
+            android:textSize="25dp"></TextView>
 
         <TextView
             android:id="@+id/nameg"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
-            android:gravity="center"
+            android:paddingLeft="20dp"
             android:text="Name"
-            android:textColor="@color/black"
-            android:textSize="20dp"></TextView>
+            android:textColor="@color/purple_200"
+            android:textSize="25dp"></TextView>
 
         <TextView
             android:id="@+id/mobileg"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="100dp"
-            android:gravity="center"
+            android:paddingLeft="20dp"
             android:text="mobile no"
-            android:textColor="@color/black"
-            android:textSize="20dp"></TextView>
+            android:textColor="@color/teal_700"
+            android:textSize="25dp"></TextView>
 
         <TextView
             android:id="@+id/emailg"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="150dp"
-            android:gravity="center"
+            android:paddingLeft="20dp"
             android:text="email"
-            android:textColor="@color/black"
-            android:textSize="20dp"></TextView>
+            android:textColor="@color/purple_500"
+            android:textSize="25dp"></TextView>
 
 
 
