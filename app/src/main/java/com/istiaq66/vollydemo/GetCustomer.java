@@ -24,14 +24,14 @@ import java.util.List;
 
 public class GetCustomer extends AppCompatActivity {
 
-    private String JSONURL = "http://10.0.2.2/API/getallCustomer.php";
+    final private String JSONURL = "http://10.0.2.2/API/getallCustomer.php";
 
 
 
     //listview object
     ListView listView;
 
-    //the hero list where we will store all the hero objects after parsing json
+    //the Model list where we will store all the Model objects after parsing json
     List<Model> Modellist;
 
     @Override
@@ -86,10 +86,10 @@ public class GetCustomer extends AppCompatActivity {
                     //getting product object from json array
                     JSONObject modelObject = array.getJSONObject(i);
 
-                    //adding the product to product list
+                    //adding the product to Model list
                      Model proo2 = new Model(modelObject.getInt("c_id"),modelObject.getString("c_name"),modelObject.getString("c_mobile"),modelObject.getString("c_email"));
 
-                    //adding the proo2 to herolist
+                    //adding the proo2 to Modellist
                     Modellist.add(proo2);
                 }
 

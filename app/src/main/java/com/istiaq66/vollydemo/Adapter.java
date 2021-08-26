@@ -18,7 +18,7 @@ public class Adapter extends ArrayAdapter<Model> {
         this.mCtx = mCtx;
     }
 
-    //the hero list that will be displayed
+    //the Model list that will be displayed
     private List<Model> Modellist;
 
     //the context object
@@ -28,6 +28,9 @@ public class Adapter extends ArrayAdapter<Model> {
 
 @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
+
+
         //getting the layoutinflater
        LayoutInflater inflater = LayoutInflater.from(mCtx);
 
@@ -48,10 +51,6 @@ public class Adapter extends ArrayAdapter<Model> {
     textViewName.setText(pro.getC_name());
     textViewmobile.setText(pro.getC_mobile());
     textViewemail.setText(pro.getC_email());
-
-
-
-
 
 
 

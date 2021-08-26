@@ -78,7 +78,6 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53"
         app:layout_constraintWidth_percent="0.8"></Button>
 
 
@@ -87,7 +86,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonbg"
-        android:text="View"
+        android:text="ViewLS"
         android:textSize="16sp"
         android:textStyle="bold"
         app:backgroundTint="@null"
@@ -96,7 +95,24 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintWidth_percent="0.8"></Button>
+
+    <Button
+        android:id="@+id/ViewRC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:text="ViewRC"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
         app:layout_constraintWidth_percent="0.8"></Button>
 
 
