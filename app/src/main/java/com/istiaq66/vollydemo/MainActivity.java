@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
    private static String TAG = MainActivity.class.getSimpleName();
-   private Button insertData,Viewlist;
+   private Button insertData,Viewlist,Viewlist2;
 
    private EditText editIname, editMobile, editemail;
 
@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
       insertData = (Button) findViewById(R.id.insert);
       Viewlist = (Button) findViewById(R.id.View);
+      Viewlist2 = (Button) findViewById(R.id.ViewRC);
 
 
       editIname = (EditText) findViewById(R.id.name);
@@ -93,6 +94,20 @@ public class MainActivity extends AppCompatActivity {
 
          }
       });
+
+
+
+      Viewlist2.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+
+          Intent intent = new Intent(getApplicationContext(),Get_Customer_RV.class);
+
+          startActivity(intent);
+
+         }
+      });
+
 
 
 

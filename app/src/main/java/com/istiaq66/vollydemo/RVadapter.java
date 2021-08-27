@@ -28,17 +28,17 @@ public class RVadapter extends RecyclerView.Adapter<RVadapter.MYViewHolder> {
     public MYViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view =inflater.inflate(R.layout.list_model_rv,null,false);
+        View view =inflater.inflate(R.layout.list_model,null,false);
         return  new MYViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MYViewHolder holder, int position) {
 
-        holder.txtid.setText(Modellist.get(position).getC_id());
-holder.txtname.setText(Modellist.get(position).getC_name());
-holder.txtmobile.setText(Modellist.get(position).getC_mobile());
-holder.txtemail.setText(Modellist.get(position).getC_email());
+        holder.txtid.setText(String.valueOf(Modellist.get(position).getC_id()));
+        holder.txtname.setText(Modellist.get(position).getC_name());
+        holder.txtmobile.setText(Modellist.get(position).getC_mobile());
+        holder.txtemail.setText(Modellist.get(position).getC_email());
     }
 
     @Override

@@ -42,7 +42,7 @@ public class GetCustomer extends AppCompatActivity {
 
 
 
-        //initializing listview and hero list
+        //initializing listview and Modellist
         listView = (ListView) findViewById(R.id.viewCustomer);
         Modellist = new ArrayList<>();
 
